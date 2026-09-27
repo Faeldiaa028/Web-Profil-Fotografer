@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>LensArt Studio | Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;}
+body{background:#000;color:#fff;scroll-behavior:smooth;}
+nav{position:fixed;top:0;width:100%;padding:15px 40px;background:rgba(0,0,0,0.8);display:flex;justify-content:space-between;align-items:center;z-index:999;}
+nav h1{letter-spacing:2px;}
+nav ul{list-style:none;display:flex;gap:20px;}
+nav ul li a{text-decoration:none;color:#fff;font-size:14px;transition:0.3s;}
+nav ul li a:hover{color:#f0c040;}
+section{min-height:100vh;display:flex;align-items:center;justify-content:center;position:relative;background-size:cover;background-position:center;}
+.overlay{background:rgba(0,0,0,0.65);padding:50px;border-radius:20px;max-width:900px;opacity:0;transform:translateY(50px);transition:1s;}
+.overlay.show{opacity:1;transform:translateY(0);}
+h2{font-size:42px;margin-bottom:15px;text-align:center;}
+p{line-height:1.8;font-size:16px;text-align:center;}
+.btn{display:inline-block;margin-top:20px;padding:12px 30px;background:#f0c040;color:#000;border-radius:30px;text-decoration:none;font-weight:bold;transition:0.3s;}
+.btn:hover{background:#fff;}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:20px;}
+.gallery img{width:100%;border-radius:15px;transition:0.4s;}
+.gallery img:hover{transform:scale(1.05);}
+footer{text-align:center;padding:25px;background:#000;font-size:14px;}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:768px){
+  nav ul{flex-direction:column;background:rgba(0,0,0,0.9);position:absolute;top:60px;right:0;width:200px;display:none;}
+  nav ul.show{display:flex;}
+  nav li a{padding:10px;}
+  nav button{display:block;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+<h1>LensArt</h1>
+<ul id="nav-links">
+<li><a href="#home">Beranda</a></li>
+<li><a href="#about">Tentang kami</a></li>
+<li><a href="#services">Layanan</a></li>
+<li><a href="#gallery">Galeri</a></li>
+<li><a href="#pricing">Harga</a></li>
+<li><a href="#team">Tim</a></li>
+<li><a href="#testimoni">Testimoni</a></li>
+<li><a href="#booking">Pesan Sekarang</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+<button id="nav-toggle" style="display:none;">☰</button>
+</nav>
+
+<!-- HOME -->
+<section id="home" style="background-image:url('Gambar/Background\ 1.jpeg')">
+<div class="overlay">
+<h2>Abadikan Moment Anda</h2>
+<p>Jasa fotografi profesional untuk portrait, landscape photography, product, dan commercial photography.</p>
+<a href="#booking" class="btn">Pesan Sekarang</a>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background-image:url('Gambar/Background\ 2.jpeg')">
+<div class="overlay">
+<h2>Tentang Kami</h2>
+<p>LensArt Studio berdiri sejak 2025, fokus menangkap momen secara artistik dan emosional.</p>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" style="background-image:url('Gambar/Background\ 3.jpeg')">
+<div class="overlay">
+<h2>Layanan</h2>
+<p>landscape Photography • portrait • Product • Cinematic Portrait</p>
+</div>
+</section>
+
+<!-- Gallery -->
+<section id="Gallery" style="background-color: black;">
+<div class="overlay">
+<h2>Galeri</h2>
+<div class="gallery">
+<img src="Gambar/gambar 1.jpeg">
+<img src="Gambar/gambar 2.jpeg">
+<img src="Gambar/gambar 3.jpeg">
+<img src="Gambar/gambar 4.jpeg">
+<img src="Gambar/gambar 5.jpeg">
+<img src="Gambar/gambar 6.jpeg">
+</div>
+</div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" style="background-image:url('Gambar/Background\ 5.jpeg')">
+<div class="overlay">
+<h2>Paket Harga</h2>
+<p>Basic: Rp1.500.000<br>Premium: Rp3.000.000<br>Exclusive: Rp5.000.000</p>
+</div>
+</section>
+
+<!-- TEAM -->
+<section id="team" style="background-image:url('Gambar/Background\ 6.jpeg')">
+<div class="overlay">
+<h2>Tim Profesional</h2>
+<p>Fotografer & editor berpengalaman dengan standar internasional.</p>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimoni" style="background-image:url('Gambar/Background\ 7.jpeg')">
+<div class="overlay">
+<h2>Testimoni</h2>
+<p>"Hasil foto sangat memuaskan!" – Client Portrait<br>"Profesional dan kreatif" – Brand Partner</p>
+</div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" style="background-image:url('Gambar/Background\ 8.jpeg')">
+<div class="overlay">
+<h2>Pesan Sekarang</h2>
+<p>Hubungi kami untuk jadwal pemotretan terbaik Anda.</p>
+<a href="#contact" class="btn" style="margin-left: 107px;">Hubungi Kami</a>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background-image:url('Gambar/Background\ 3.jpeg')">
+<div class="overlay">
+<h2>Kontak</h2>
+<p>Email: lensartstudio_@email.com<br>Instagram: @Lansartstudio<br>WhatsApp: 08xxxxxxxxxx</p>
+</div>
+</section>
+
+<footer>
+    <div>© 2026 LensArt Studio • Photography Services 
+    <div class="" style="margin-top: 10px;">MOH FAREL ADZDZIKRI</div>
+    </div>
+</footer>
+
+<script>
+// ANIMASI SCROLL
+const overlays = document.querySelectorAll('.overlay');
+function showOverlay() {
+    const triggerBottom = window.innerHeight / 5 * 4;
+    overlays.forEach(overlay => {
+        const boxTop = overlay.getBoundingClientRect().top;
+        if(boxTop < triggerBottom){
+            overlay.classList.add('show');
+        }
+    });
+}
+window.addEventListener('scroll', showOverlay);
+window.addEventListener('load', showOverlay);
+
+// MOBILE NAV TOGGLE
+const toggle = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
+toggle.addEventListener('click',()=>navLinks.classList.toggle('show'));
+</script>
+
+</body>
+</html>
